@@ -1,0 +1,128 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# Streamlit
+.streamlit/
+.streamlit/secrets.toml
+
+# API Keys and Secrets
+*.env
+.env.local
+.env.*.local
+secrets.toml
+config.ini
+*.key
+api_keys.txt
+
+# IDE and Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Portfolio Data (if you want to keep user data private)
+# Uncomment these if you don't want to commit portfolio data
+# portfolio_data.json
+# user_portfolios/
+# *.csv
+
+# Backup files
+*.bak
+*.backup
+*_backup.*
+*_old.*
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+.Spotlight-V100
+.Trashes
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Documentation builds (if you add docs)
+docs/_build/
+site/
+
+# Python Package Distribution
+*.whl
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/

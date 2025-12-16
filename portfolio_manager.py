@@ -6,7 +6,7 @@ import pandas as pd
 
 # Page configuration
 st.set_page_config(
-    page_title="Asesor Venezolano de Portafolio",
+    page_title="AsesorAIrrechisimo",
     page_icon="📊",
     layout="wide"
 )
@@ -254,7 +254,7 @@ Si empiezas a sonar formal, DETENTE y empieza de nuevo con humor."""
             # Add assistant's response to messages
             messages.append({"role": "assistant", "content": response.content})
             
-            # Add tool result (Claude handles this internally, we just continue the conversation)
+            # Add tool result
             messages.append({
                 "role": "user",
                 "content": [{
@@ -289,7 +289,7 @@ Si empiezas a sonar formal, DETENTE y empieza de nuevo con humor."""
         return f"Error communicating with Claude: {str(e)}"
 
 # Main UI
-st.title("📊 Administrador de Portafolio de Papá")
+st.title("AsesorAIrrechisimo")
 st.markdown("*Con la voz de un venezolano arrecho y Claude AI*")
 
 # Sidebar for API key and settings
@@ -570,7 +570,7 @@ with tab3:
 st.divider()
 st.markdown("""
 <div style='text-align: center; color: #666; padding: 20px;'>
-    <p>🎄 Hecho con ❤️ para Papá | Potenciado por un Venezolano virtual arrecho y Claude AI</p>
+    <p>Potenciado por un Venezolano virtual arrecho y Claude AI</p>
     <p style='font-size: 0.8em;'>Esta herramienta provee información con fines educativos. Siempre consulta con un asesor financiero calificado antes de tomar decisiones de inversión. (Pero este venezolano sabe burda, vale)</p>
 </div>
 """, unsafe_allow_html=True)

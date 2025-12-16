@@ -78,10 +78,9 @@ logs/
 *.sqlite3
 
 # Portfolio Data (if you want to keep user data private)
-# Uncomment these if you don't want to commit portfolio data
-# portfolio_data.json
-# user_portfolios/
-# *.csv
+portfolio_data.json
+user_portfolios/
+*.csv
 
 # Backup files
 *.bak

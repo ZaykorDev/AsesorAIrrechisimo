@@ -1,174 +1,261 @@
-# 📊 Administrador de Portafolio de Papá
+# El Asesor AIrrecho - AI Portfolio Manager
 
-Una aplicación Streamlit con un asesor financiero venezolano sarcástico pero brillante, potenciado por Claude AI.
+> A Streamlit-based portfolio management application powered by Claude AI, featuring a uniquely entertaining Venezuelan financial advisor personality that delivers professional-grade analysis with humor.
 
-## 🎄 Guía de Configuración para el Regalo de Navidad
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Streamlit](https://img.shields.io/badge/streamlit-1.31+-red.svg)](https://streamlit.io)
+[![Claude AI](https://img.shields.io/badge/AI-Claude%20Sonnet%204-purple.svg)](https://www.anthropic.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-### Requisitos Previos
-- Python 3.8 o superior
-- Una API key de Anthropic ([Consíguela aquí](https://console.anthropic.com/))
+## Overview
 
-### Pasos de Instalación
+This project started as a personalized Christmas gift for my dad - combining AI technology with financial portfolio management. What makes it unique is the custom AI personality system: a sarcastic but brilliant Venezuelan financial advisor who provides professional market analysis while keeping conversations engaging and memorable.
 
-1. **Instalar paquetes de Python:**
+The application demonstrates advanced prompt engineering techniques to create a consistent, entertaining AI personality that never compromises on the quality of financial advice.
+
+## Key Features
+
+### **Conversational AI Advisor**
+- Natural language portfolio analysis
+- Real-time market research via web search
+- Context-aware recommendations based on risk profile
+- Maintains conversation history for coherent multi-turn dialogues
+
+### **Portfolio Management**
+- Track multiple asset types (ETFs, stocks, bonds, mutual funds)
+- Visual asset allocation breakdown
+- Calculate total portfolio value
+- Export/import via CSV
+
+### **Quick Analysis Tools**
+- One-click risk assessment
+- Sector diversification analysis
+- Performance tracking
+- Rebalancing recommendations
+- Market outlook summaries
+
+### **Custom AI Personality**
+- Engineered system prompts for consistent character
+- Venezuelan expressions and cultural references
+- Sarcastic humor while maintaining analytical rigor
+- Demonstrates advanced prompt engineering capabilities
+
+## Quick Start
+
+### Prerequisites
+- Python 3.8 or higher
+- Anthropic API key ([Get one here](https://console.anthropic.com/))
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/sdelmo/vz-portfolio-manager.git
+   cd portfolio-manager
+   ```
+
+2. **Install dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-2. **Ejecutar la aplicación:**
+3. **Run the application**
    ```bash
    streamlit run portfolio_manager.py
    ```
 
-3. **Acceder a la app:**
-   - La app se abrirá automáticamente en tu navegador
-   - Usualmente en: `http://localhost:8501`
+4. **Configure**
+   - Open http://localhost:8501 in your browser
+   - Enter your Anthropic API key in the sidebar
+   - Set your risk profile
+   - Start adding portfolio holdings!
 
-### Configuración Inicial
+## Example Interactions
 
-1. **Ingresar API Key:**
-   - En la barra lateral, ingresa tu API key de Anthropic
-   - La key se guarda solo para la sesión (no permanentemente)
-   - Consigue una key en: https://console.anthropic.com/
-
-2. **Configurar Perfil de Riesgo:**
-   - Elige entre: Conservador, Moderado, o Agresivo
-   - O selecciona "Personalizado" para describir preferencias específicas
-
-3. **Agregar Holdings del Portafolio:**
-   - Ve a la pestaña "Manejo del Portafolio"
-   - Haz clic en "Agregar Nuevo Holding"
-   - Ingresa detalles para cada ETF, acción o bono
-
-### Características
-
-#### 💬 Habla con el Venezolano
-- Haz preguntas sobre tu portafolio
-- Obtén análisis del mercado y recomendaciones
-- Investiga acciones o ETFs específicos
-- El asesor usa búsqueda web para obtener datos actuales del mercado
-
-**Ejemplos de preguntas:**
-- "Analiza la diversidad de mi portafolio"
-- "¿Qué opinas de VTI?"
-- "¿Debería rebalancear mi portafolio?"
-- "¿Hay algún riesgo en mis holdings actuales?"
-
-#### 📊 Manejo del Portafolio
-- Agregar/eliminar holdings
-- Ver asignación de activos
-- Rastrear valor total del portafolio
-- Exportar datos del portafolio a CSV
-
-#### 📈 Análisis Rápido
-Botones de análisis de un click para:
-- Evaluación de riesgos
-- Análisis por sector
-- Mejores rendimientos
-- Recomendaciones de rebalanceo
-- Perspectiva futura
-- Advertencias de riesgo
-
-### Cómo Funciona
-
-1. **Contexto del Portafolio:** Claude tiene visibilidad completa de tus holdings, cantidades y precios
-2. **Consciente del Riesgo:** Las recomendaciones se adaptan a tu perfil de riesgo declarado
-3. **Datos Actuales:** Usa búsqueda web para obtener información del mercado en tiempo real
-4. **Conversacional:** Interfaz de chat natural - ¡solo haz preguntas!
-5. **Personalidad Venezolana:** Respuestas con humor sarcástico venezolano pero análisis serio
-
-### La Personalidad Venezolana
-
-Tu asesor financiero es un venezolano sarcástico que:
-- Habla SIEMPRE en español
-- Usa expresiones venezolanas: "chamo", "vale", "arrecho", "pana", "coño"
-- Hace comentarios irónicos pero útiles
-- Da consejos financieros EXCELENTES
-- Referencia la economía venezolana para perspectiva
-- Es directo y honesto (sin pelos en la lengua)
-
-**Ejemplo:**
+### Portfolio Analysis
 ```
-Tú: "¿Cómo está mi portafolio?"
+User: "How's my portfolio looking?"
 
-El Venezolano: "Chamo, tu portafolio está más diversificado 
-que una hallaca bien hecha, te felicito verga. VTI subió 0.8% 
-hoy (arrecho). Con tu perfil conservador, déjalo tranquilo pana, 
-ese ETF es más estable que... bueno, que cualquier cosa en 
-Venezuela coño."
+Advisor: "Ey chamo, déjame ver tu portafolio...
+
+Vale, tienes $32,500 invertidos. Tu diversificación está decente pana, 
+60% acciones / 40% bonos. Para tu perfil conservador, eso está arrecho.
+
+VTI está sólido (+0.9% hoy), AGG tranquilo como siempre, y AAPL subió 
+1.5%. Después de sobrevivir la economía venezolana, esto me parece 
+pan comido vale. Todo bien! 🏖️"
 ```
 
-### Ejemplos de Flujos de Trabajo
+### Market Research
+```
+User: "Should I buy more AAPL?"
 
-#### Comenzando
-1. Agregar todos los holdings actuales al portafolio
-2. Configurar perfil de riesgo en la barra lateral
-3. Preguntar a Claude: "Por favor dame un resumen de mi portafolio"
+Advisor: "Coño chamo, déjame buscar esa vaina...
 
-#### Chequeos Regulares
-1. Hacer clic en "¿Cómo está el mercado hoy?" 
-2. Revisar cualquier rebalanceo sugerido
-3. Preguntar sobre holdings específicos si hay preocupación
+[searches web for current AAPL data]
 
-#### Modo Investigación
-1. "Investiga [TICKER] - ¿es buena compra ahora?"
-2. "Compara VTI vs VOO para mi portafolio"
-3. "¿Qué dicen los analistas sobre [TICKER]?"
+Vale mira: AAPL está en $175.50 (subió 15% en 3 meses, arrecho!). 
+Los analistas tienen precio objetivo de $200. PERO pana, ya tienes 
+13.5% de tu portafolio en una sola acción.
 
-### Tips para Mejores Resultados
+Mi consejo: No compres más. Si quieres más tech, considera un ETF 
+como QQQ para diversificar. No pongas todos los huevos en la misma 
+cesta vale!"
+```
 
-- **Sé específico:** En lugar de "¿Qué piensas?", pregunta "¿Debería aumentar mi asignación en bonos?"
-- **Actualiza regularmente:** Mantén tus holdings del portafolio actualizados
-- **Haz seguimientos:** Claude recuerda el contexto de la conversación
-- **Usa Análisis Rápido:** Genial para chequeos rutinarios
+## Architecture
 
-### Notas de Seguridad
+### Tech Stack
+- **Frontend**: Streamlit (Python-based web framework)
+- **AI Engine**: Anthropic Claude Sonnet 4 (via API)
+- **Data Processing**: Pandas
+- **Web Search**: Anthropic's integrated web search tool
+- **State Management**: Streamlit session state
 
-- Las API keys se guardan solo en memoria de sesión (no en disco)
-- Los datos del portafolio permanecen locales en tu computadora
-- No se comparten datos excepto con Claude API para análisis
-- Considera la función de exportación CSV para respaldo
+### Key Components
 
-### Solución de Problemas
+```
+portfolio_manager.py
+├── Portfolio Data Management
+│   ├── Add/remove holdings
+│   ├── Calculate valuations
+│   └── Export/import CSV
+├── AI Integration
+│   ├── Claude API client
+│   ├── Custom system prompts
+│   ├── Web search tool integration
+│   └── Chat history management
+└── UI Components
+    ├── Chat interface
+    ├── Portfolio management tab
+    ├── Quick analysis buttons
+    └── Risk profile configuration
+```
 
-**"Por favor ingresa tu API key"**
-- Ingresa tu API key de Anthropic en la barra lateral
-- Asegúrate que comience con "sk-ant-"
+### AI Prompt Engineering
 
-**"Error comunicándose con Claude"**
-- Verifica tu conexión a internet
-- Verifica que tu API key sea válida
-- Asegúrate de tener créditos API restantes
+The core innovation is the system prompt that creates a consistent AI personality:
 
-**El portafolio no se muestra**
-- Asegúrate de agregar holdings en la pestaña Manejo del Portafolio
-- Verifica que cantidad y precio sean mayores que 0
+**Key Techniques:**
+- **Strict personality constraints**: Forces specific opening phrases and expressions
+- **Cultural embedding**: Venezuelan references create authentic character
+- **Structural requirements**: Mandates response format (greeting → humor → data → recommendation)
+- **Tone enforcement**: Prohibits formal corporate language
+- **Example-driven learning**: Multiple response templates ensure consistency
 
-### Conseguir una API Key &rarr; Yo te voy a dar una :)
+This demonstrates how careful prompt engineering can create a memorable user experience while maintaining professional functionality.
 
-1. Ve a https://console.anthropic.com/
-2. Regístrate o inicia sesión
-3. Navega a "API Keys"
-4. Crea una nueva key
-5. Copia y pega en la app
+## Use Cases
 
-**Costo:** La API de Claude es de pago por uso. Uso típico:
-- Cada mensaje de chat: ~$0.01-0.05
-- Análisis rápido: ~$0.02-0.10
-- ¡Muy accesible para uso personal!
+- **Personal Finance**: Manage individual investment portfolios
+- **Education**: Learn about investing through conversational AI
+- **Portfolio Analysis**: Get quick insights on diversification and risk
+- **Market Research**: Access real-time market data through natural language
+- **AI Experimentation**: Study prompt engineering and personality systems
 
-### Descargo de Responsabilidad
+## Security & Privacy
 
-Esta herramienta es solo con fines informativos y educativos. No constituye asesoría financiera. Siempre consulta con un asesor financiero calificado antes de tomar decisiones de inversión.
+- API keys stored only in session memory (never persisted to disk)
+- Portfolio data remains local on user's machine
+- No data transmitted except to Claude API for analysis
+- `.gitignore` configured to prevent accidental key commits
+- CSV export for user-controlled backups
 
-### Soporte
+## Cost Considerations
 
-Si encuentras problemas:
-1. Revisa este README
-2. Asegúrate de que todos los requisitos estén instalados
-3. Verifica la versión de Python (3.8+)
-4. Verifica que la API key sea válida
+The application uses the Claude API which is pay-as-you-go:
+
+**Typical Usage Costs:**
+- Simple chat message: ~$0.01-0.02
+- Portfolio analysis: ~$0.03-0.05
+- Market research query: ~$0.02-0.04
+- **Monthly (regular use)**: ~$3-8
+
+Much more affordable than buying a beer for your buddy that knows all about finance.
+
+## Learning Outcomes
+
+This project demonstrates:
+
+1. **AI Integration**: Working with modern LLM APIs
+2. **Prompt Engineering**: Creating consistent AI personalities
+3. **Full-Stack Development**: UI + Backend + AI in one application
+4. **State Management**: Handling complex application state
+5. **API Design**: Error handling, retries, tool use
+6. **UX Design**: Making financial tools accessible and engaging
+7. **Data Visualization**: Portfolio charts and metrics
+
+## Configuration
+
+### Adjusting AI Personality
+
+The personality can be tuned by modifying the system prompt in `portfolio_manager.py` (lines ~59-220):
+
+```python
+# For more professional tone:
+- Reduce Venezuelan expressions
+- Remove comparisons to Venezuela
+- Use formal greeting patterns
+
+# For more humor:
+- Increase cultural references
+- Add more example responses
+- Emphasize sarcastic elements
+```
+
+### API Settings
+
+```python
+# Adjust response length
+max_tokens=4096  # Increase for longer responses
+
+# Change AI model
+model="claude-sonnet-4-20250514"  # Use latest model
+```
+
+## Contributing
+
+Contributions are welcome! Areas for improvement:
+
+- [ ] Add more asset types (crypto, commodities)
+- [ ] Historical performance tracking
+- [ ] Integration with broker APIs (auto-import holdings)
+- [ ] Multiple portfolio support
+- [ ] Tax-loss harvesting suggestions
+- [ ] Benchmark comparisons (S&P 500, etc.)
+- [ ] Mobile-responsive design improvements
+- [ ] Additional AI personality options
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Built with [Anthropic's Claude AI](https://www.anthropic.com/)
+- UI powered by [Streamlit](https://streamlit.io/)
+- Inspired by the need for accessible, engaging financial tools
+- Special thanks to my dad for being the inspiration and first user!
+
+## My Contact Info
+
+- GitHub: [@sdelmo](https://github.com/sdelmo)
+- LinkedIn: [Me](https://linkedin.com/in/sebastian-a-delgado)
+- Email: sebastian.adm0@gmail.com
+
+## Why This Project?
+
+Financial tools are often intimidating and boring. I wanted to create something that:
+- Makes portfolio management **accessible** through natural conversation
+- Proves AI can be **entertaining** while being useful
+- Demonstrates that **good UX** can exist in finance
+- Shows how **personality** enhances engagement without compromising quality
+- My dad complains that he has no time to do research into these things, might as well make it accessible and fun.
+
+The result is a tool my dad actually *enjoys* using to manage his investments - and that's the ultimate success metric.
 
 ---
 
-Potenciado por un Venezolano Virtual y Claude AI
+**⭐ If you find this project interesting, please consider starring it!**
+
+*Built with ❤️ and lots of coffee*

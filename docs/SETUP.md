@@ -50,10 +50,10 @@ python3 --version
 ### 2. Clone the Repository
 ```bash
 # Using HTTPS
-git clone https://github.com/sdelmo/vz-portfolio-manager.git
+git clone https://github.com/sdelmo/AsesorAIrrechisimo.git
 
 # Or using SSH
-git clone git@github.com:sdelmo/vz-portfolio-manager.git
+git clone git@github.com:sdelmo/AsesorAIrrechisimo.git
 
 # Navigate to directory
 cd portfolio-manager
